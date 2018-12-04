@@ -1,3 +1,6 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
 
 typedef int infotype;
 typedef struct TElmtQueue *address;
@@ -11,7 +14,7 @@ typedef struct{
 	address Tail;
 }Queue;
 
-#define Info(P[i]) (P)->Info[i]
+#define Info(P) (P)->Info
 #define Next(P) (P)->Next
 #define Head(Q) (Q).Head
 #define Tail(Q) (Q).Tail
